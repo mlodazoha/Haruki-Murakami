@@ -1,0 +1,103 @@
+<html>
+<head><title>Zosia Zylka - website about Haruki Murakami</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>
+<hr>
+<h1 align="center"><span style="front-size: 30px; color: brown">PHOTOS</span></h1>
+<br>
+<hr>
+
+<table align="center" border="1">
+	<tr>
+	<td width="180" align="center"><a href="stronaglowna.html">basic information</a></td>
+	<td width="180" align="center"><a href="books.html">books</a></td>
+	<td width="180" align="center"><a href="prizes.html">prizes</a></td>
+	<td width="180" align="center"><a href="lifestyle.html">lifestyle</a></td>
+	<td width="180" align="center"><a href="photos.html">photos</a></td>
+	</tr>
+</table>
+<br>
+<br>
+ </style>
+</head>
+<body>
+
+  
+  <div id="clock"></div>
+
+
+  <script>
+    function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+
+      // Dodanie zera na początku cyfr jednocyfrowych
+      hours = hours < 10 ? '0' + hours : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+
+      var time = hours + ':' + minutes + ':' + seconds;
+
+      document.getElementById('clock').textContent = time;
+    }
+
+    // Aktualizacja zegara co sekundę
+    setInterval(updateClock, 1000);
+  </script>
+
+<style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+
+<table>
+        <tr>
+            <td><img src="haruki1.jpg" alt="Photo 1"></td>
+            <td><img src="haruki2.jpg" alt="Photo 2"></td>
+            <td><img src="haruki3.jpg" alt="Photo 3"></td>
+        </tr>
+        <tr>
+            <td><img src="haruki4.jpg" alt="Photo 4"></td>
+            <td><img src="haruki5.jpg" alt="Photo 5"></td>
+            <td><img src="haruki6.jpg" alt="Photo 6"></td>
+        </tr>
+    </table>
+
+
+<style>
+        /* Link styles */
+        a {
+            color: brown; 
+            text-decoration: underline; 
+            font-weight: bold; 
+        }
+
+       
+        a:hover {
+            color: red;
+        }
+    </style>
+
+
+
+ 
+
+
+
+
+</body>
+
+
+
+</html>
